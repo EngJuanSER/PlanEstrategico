@@ -1,0 +1,53 @@
+\documentclass[12pt,letterpaper]{article}
+
+\input{preamble}
+
+\begin{document}
+
+% Página de título
+\begin{titlepage}
+\centering
+
+\vspace*{2cm}
+
+{\Huge\textbf{\titulo}}
+
+\vspace{2cm}
+
+\textbf{\Large Autores:}\\
+\vspace{0.5cm}
+\autores
+
+\vspace{2cm}
+
+\textbf{\Large Materia:}\\
+\materia
+
+\vspace{0.5cm}
+
+\textbf{\Large Profesor:}\\
+\profesor
+
+\vspace{2cm}
+
+\universidad\\
+\facultad\\
+\ciudad\\
+\anno
+
+\end{titlepage}
+
+% Índice
+\tableofcontents
+\newpage
+
+% Secciones del documento
+\input{sections/caracterizacion}
+\newpage
+
+\input{sections/ambito-misional}
+\newpage
+
+\printbibliography[title={Referencias}]
+
+\end{document}

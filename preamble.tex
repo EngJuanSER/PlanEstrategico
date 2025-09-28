@@ -1,0 +1,87 @@
+% Paquetes esenciales
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+\usepackage{float}
+
+% Configuración de colores
+\definecolor{mercadolibre}{RGB}{255, 227, 0}
+\definecolor{azulcorporativo}{RGB}{52, 131, 250}
+
+% Configuración de hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=cyan,
+    citecolor=black,
+    pdfborder={0 0 0}
+}
+
+% Configuración de encabezados y pies de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Plan Estratégico MercadoLibre}
+\fancyhead[R]{\small Universidad Distrital Francisco José de Caldas}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Configuración de títulos de secciones
+\titleformat{\section}
+{\normalfont\Large\bfseries}
+{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}
+{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalfont\normalsize\bfseries}
+{\thesubsubsection}{1em}{}
+
+% Configuración del espaciado
+\onehalfspacing
+
+% Configuración de listas
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+
+% Comandos personalizados para información del documento
+\newcommand{\universidad}{Universidad Distrital Francisco José de Caldas}
+\newcommand{\facultad}{Facultad de Ingeniería}
+\newcommand{\materia}{Planeación de Sistemas de Información}
+\newcommand{\profesor}{Edgar Jacinto}
+\newcommand{\titulo}{Plan Estratégico MercadoLibre}
+\newcommand{\autores}{
+    Luis Fernando Páez Miranda \\
+    Kevin Santiago Avella Torres \\
+    Javier Alejandro Sanchez Salamanca \\
+    Juan Manuel Serrano Rodríguez
+}
+\newcommand{\ciudad}{Bogotá D.C., Colombia}
+\newcommand{\anno}{2025}
+
+% Configuración para tablas
+\renewcommand{\arraystretch}{1.2}
+
+% Configuración del índice
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
